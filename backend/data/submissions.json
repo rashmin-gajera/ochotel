@@ -1,0 +1,32 @@
+[
+  {
+    "id": "07588862-61d8-453c-a943-b53e33e2ee21",
+    "type": "checkin",
+    "payload": {
+      "guestName": "",
+      "anonymous": true,
+      "from": "",
+      "stayReason": "Business",
+      "visitingWith": "Friends",
+      "purpose": "fairground_fun",
+      "eventName": "",
+      "otherPurpose": ""
+    },
+    "createdAt": "2026-04-18T08:03:34.993Z"
+  },
+  {
+    "id": "24f4051d-ba26-4fe6-a029-e843d55990af",
+    "type": "checkin",
+    "payload": {
+      "guestName": "Rashmin Gajera",
+      "anonymous": false,
+      "from": "Long Beach, CA",
+      "stayReason": "Business",
+      "visitingWith": "Family",
+      "purpose": "event",
+      "eventName": "OC Fairground Event",
+      "otherPurpose": ""
+    },
+    "createdAt": "2026-04-18T08:50:24.182Z"
+  }
+]
