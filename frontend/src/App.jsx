@@ -45,7 +45,7 @@ import {
 } from 'lucide-react';
 
 // API base for backend requests. Adjust if your backend runs on a different host/port.
-const apiBase = 'http://localhost:4000';
+const apiBase = '';
 
 const checkoutImproveOptions = [
   { label: 'Amenities', icon: Bath },
