@@ -44,8 +44,9 @@ import {
   Wrench,
 } from 'lucide-react';
 
-// API base for backend requests. Adjust if your backend runs on a different host/port.
-const apiBase = import.meta.env.VITE_API_BASE || '';
+// API base for backend requests. Read from Vite env (VITE_API_BASE).
+// Defaults to '/api' so the bundled serverless functions at /api/* are used when deployed.
+const apiBase = import.meta.env.VITE_API_BASE || '/api';
 
 const checkoutImproveOptions = [
   { label: 'Amenities', icon: Bath },
