@@ -127,6 +127,13 @@ const initialCheckOut = {
 // Use the public asset placed in frontend/public. If you add a JPEG, update this path accordingly.
 const heroBackground = 'url(/hotel.jpg)';
 
+// Define steps for check-in and check-out flows
+const CHECKIN_STEPS = ['Step 1: Guest Info', 'Step 2: Visit Details', 'Step 3: Purpose'];
+const CHECKOUT_STEPS = ['Step 1: Stay Feedback', 'Step 2: Improvement Suggestions', 'Step 3: Review'];
+
+// Define a default class name for icons
+const iconClassName = 'icon-class';
+
 function App() {
   const [route, setRoute] = useState(window.location.pathname === '/admin' ? 'admin' : 'guest');
   const [view, setView] = useState('home');
