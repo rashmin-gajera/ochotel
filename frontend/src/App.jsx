@@ -259,7 +259,7 @@ function App() {
     const payload = type === 'checkin' ? checkIn : checkOut;
 
     try {
-      const response = await fetch(`${apiBase}/api/submissions`, {
+      const response = await fetch(`${apiBase}/submissions`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ type, payload }),
@@ -282,7 +282,7 @@ function App() {
     setLoadingAdmin(true);
 
     try {
-      const response = await fetch(`${apiBase}/api/submissions`);
+      const response = await fetch(`${apiBase}/submissions`);
       if (!response.ok) throw new Error('Unable to load records.');
 
       const data = await response.json();
