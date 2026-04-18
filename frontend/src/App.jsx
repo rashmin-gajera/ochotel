@@ -125,7 +125,7 @@ const initialCheckOut = {
 };
 
 // Use the public asset placed in frontend/public. If you add a JPEG, update this path accordingly.
-const heroBackground = 'url(/hotel.heic)';
+const heroBackground = 'url(/hotel.jpg)';
 
 function App() {
   const [route, setRoute] = useState(window.location.pathname === '/admin' ? 'admin' : 'guest');
