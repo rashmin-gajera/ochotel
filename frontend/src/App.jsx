@@ -135,7 +135,13 @@ const CHECKOUT_STEPS = ['Step 1: Stay Feedback', 'Step 2: Improvement Suggestion
 const iconClassName = 'icon-class';
 
 function App() {
-  const [route, setRoute] = useState(window.location.pathname === '/admin' ? 'admin' : 'guest');
+  // Update route initialization to handle unexpected paths
+  const [route, setRoute] = useState(() => {
+    const path = window.location.pathname;
+    if (path === '/admin') return 'admin';
+    if (path === '/guest') return 'guest';
+    return 'guest'; // Default to 'guest' for unknown routes
+  });
   const [view, setView] = useState('home');
   const [adminAuthed, setAdminAuthed] = useState(false);
   const [adminPassword, setAdminPassword] = useState('');
