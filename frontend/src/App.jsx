@@ -46,7 +46,7 @@ import {
 
 // API base for backend requests. Read from Vite env (VITE_API_BASE).
 // Defaults to '/api' so the bundled serverless functions at /api/* are used when deployed.
-const apiBase = import.meta.env.VITE_API_BASE || '/api';
+const apiBase = '/api';
 
 const checkoutImproveOptions = [
   { label: 'Amenities', icon: Bath },
