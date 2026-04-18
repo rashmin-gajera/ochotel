@@ -45,7 +45,7 @@ import {
 } from 'lucide-react';
 
 // API base for backend requests. Adjust if your backend runs on a different host/port.
-const apiBase = '';
+const apiBase = import.meta.env.VITE_API_BASE || '';
 
 const checkoutImproveOptions = [
   { label: 'Amenities', icon: Bath },

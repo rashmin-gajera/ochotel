@@ -1,15 +1,13 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "services": {
-    "frontend": {
-      "entrypoint": "frontend",
-      "routePrefix": "/",
-      "framework": "vite"
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://ochotel.vercel.app/api/$1"
     },
-    "backend": {
-      "entrypoint": "backend",
-      "routePrefix": "/api",
-      "framework": "express"
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
-  }
+  ]
 }
